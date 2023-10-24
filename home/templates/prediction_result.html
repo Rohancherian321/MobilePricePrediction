@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+  
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+                   
+                    padding: 50px;
+                    text-align: center;
+                    background-image: url('../static/mobile.jpg');
+                    background-size: cover; /* This property ensures the image covers the whole background */
+                    background-repeat: no-repeat; /* This property prevents the image from repeating */
+                    background-attachment: fixed; /* This property ensures the background image stays fixed while scrolling */
+                    background-position: center center; /* This property centers the background image */
+        }
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+select.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Result page styles */
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result-value {
+    font-size: 24px;
+    color: #007BFF;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Prediction Result</h1>
+        </header>
+        <div class="result">
+            <p class="result-label">Predicted Price Range:</p>
+            <p class="result-value">{{ predicted_label }}</p>
+        </div>
+        <a href="/" class="btn btn-secondary">Go back to prediction</a>
+    </div>
+</body>
+</html>
